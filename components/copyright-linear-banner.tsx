@@ -28,8 +28,9 @@ export const CopyrightLinearBanner = () => {
       <div className="space-y-3">
         <p>
           <strong>⚠️ NOTE:</strong>This is a Demo Website created for Kuldeep as
-          a sample for project on Fiverr. The images are random demo images I've
-          just used as placeholders from one of my other projects. Good Luck! 👍
+          a sample for project on Fiverr. This is not complete work. The images
+          are 'random demo' images I've just used as placeholders from one of my
+          other projects. Good Luck! 👍
         </p>
         <p>
           <Button href="tel:+919264104251" size="large" target="_blank">
