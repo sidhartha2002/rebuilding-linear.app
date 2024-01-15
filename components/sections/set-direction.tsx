@@ -40,7 +40,7 @@ export const SetDirection = () => {
           {
             icon: WorkflowsIcon,
             title: "Energy Industry.",
-            text: "Organize Energy.",
+            text: "Organize Energy & other use cases.",
           },
           {
             icon: CustomViewsIcon,
