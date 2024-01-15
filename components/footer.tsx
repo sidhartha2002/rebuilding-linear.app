@@ -10,12 +10,10 @@ const footerLinks = [
     title: "Product",
     links: [
       { title: "Features", href: "#" },
-      { title: "Integrations", href: "#" },
-      { title: "Pricing", href: "#" },
-      { title: "Changelog", href: "#" },
-      { title: "Docs", href: "#" },
-      { title: "Linear Method", href: "#" },
-      { title: "Download", href: "#" },
+      { title: "Solutions", href: "#" },
+      { title: "Industries", href: "#" },
+      { title: "Expertise", href: "#" },
+      { title: "Thought Leadership", href: "#" },
     ],
   },
   {
@@ -35,6 +33,7 @@ const footerLinks = [
       { title: "Contact", href: "#" },
       { title: "DPA", href: "#" },
       { title: "Terms of service", href: "#" },
+      { title: "Privacy Policy", href: "#" },
     ],
   },
   {
@@ -53,7 +52,8 @@ export const Footer = () => (
       <div>
         <div className="flex h-full flex-row justify-between lg:flex-col">
           <div className="flex items-center text-grey">
-            <Logo className="mr-4 h-4 w-4" /> Linear - Designed worldwide
+            <Logo className="mr-4 h-4 w-4" /> Demo Website by Sarthak - Kuldeep
+            `Fiverr`
           </div>
           <div className="mt-auto flex space-x-4 text-grey">
             <TwitterIcon />

@@ -16,46 +16,46 @@ export const SetDirection = () => {
       <Features.Main
         title={
           <>
-            Set direction
+            Choose Your
             <br />
-            with Roadmaps
+            Industry
           </>
         }
         image="/roadmap.webp"
         imageSize="large"
-        text="Plan visually, collaborate in cross-team projects, and make better decisions with progress insights and project updates."
+        text="Choose whatever Industry interests you anad we have it for you! (demo text & image)"
       />
       <Features.Grid
         features={[
           {
             icon: ParentSubIcon,
-            title: "Multi-team projects.",
-            text: "Collaborate across teams and departments.",
+            title: "Automotive and Mobility.",
+            text: "Collaborate across Automobiles.",
           },
           {
             icon: AutomatedBacklogIcon,
-            title: "Project documents.",
-            text: "Write project briefs and specs directly in Linear.",
+            title: "Consumer Goods and Retails.",
+            text: "About Consumer Goods and Retails.",
           },
           {
             icon: WorkflowsIcon,
-            title: "Custom roadmaps.",
-            text: "Organize projects across multiple roadmaps.",
+            title: "Energy Industry.",
+            text: "Organize Energy.",
           },
           {
             icon: CustomViewsIcon,
-            title: "Timeline view.",
-            text: "Visualize the product journey ahead.",
+            title: "Financial Services.",
+            text: "Visualize the finance journey ahead.",
           },
           {
             icon: DiscussionIcon,
-            title: "Project insights.",
-            text: "Track scope, velocity, and progress over time.",
+            title: "Health insights.",
+            text: "Track health and progress over time.",
           },
           {
             icon: IssuesIcon,
-            title: "Personal notifications.",
-            text: "Stay in the loop on project activity and updates.",
+            title: "Technology.",
+            text: "Stay in the loop on Tech activity and updates.",
           },
         ]}
       />
@@ -64,14 +64,14 @@ export const SetDirection = () => {
           {
             image: "/card-updates.webp",
             imageClassName: "top-[55%] md:top-[40%] w-full left-[7%]",
-            title: "Project updates",
-            text: "Keep everyone up-to-date on the health and progress of projects.",
+            title: "Featured Paper 1",
+            text: "A Better Customer Growth Strategy is Within Reach. Download the Guide to Our Award-Winning Path-to-Purchase Research",
           },
           {
             image: "/card-roadmaps.webp",
             imageClassName: "top-[55%] md:top-[40%] w-full left-[2%]",
-            title: "Focus on the big picture",
-            text: "Explore every company project in one view to easily identify what needs attention.",
+            title: "Featured Paper 2",
+            text: "How Macroeconomic Disruption Has Upended the Customer Journey in Financial Services",
           },
         ]}
       />

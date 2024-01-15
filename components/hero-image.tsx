@@ -3,6 +3,11 @@
 import classNames from "classnames";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Video from "../components/Video/Video";
+const mutedVideo = "./media/muted_vid.mp4";
+import React from "react";
+import YouTube from "react-youtube";
+import MovieClip from "../components/youtubeclip";
 
 const randomNumberBetween = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -16,7 +21,7 @@ interface Line {
 }
 
 export const HeroImage = () => {
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: false });
   const [lines, setLines] = useState<Line[]>([]);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -99,14 +104,28 @@ export const HeroImage = () => {
           <path pathLength="1" d="M538 777L538 128"></path>
         </svg>
 
-        <img
+        <video
+          autoPlay
+          muted
+          loop
           className={classNames(
-            "relative z-10 transition-opacity delay-[680ms]",
+            "relative z-10 scale-95 rounded-xl transition-opacity delay-[680ms]",
             inView ? "opacity-100" : "opacity-0"
           )}
-          src="/img/hero.webp"
+        >
+          <source src="https://escalent.co/wp-content/uploads/2022/03/Escalent_HomepageLoop_1335x760-2022.webm" />
+        </video>
+
+        <img
+          className={classNames(
+            "absolute top-0 z-10 transition-opacity delay-[680ms]",
+            inView ? "opacity-5" : "opacity-0"
+          )}
+          src="/img/bgoverlay.webp"
           alt="Hero image"
         />
+        <div className="bg-red h-96 w-96 absolute top-0 z-50"></div>
+        {/* <MovieClip /> */}
       </div>
     </div>
   );
