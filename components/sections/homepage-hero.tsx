@@ -11,14 +11,14 @@ export const HomepageHero = () => (
       variant="secondary"
       size="small"
     >
-      <span className="">
+      <span className="text-[10px]">
         Notable union helps clients find new sources of growth
       </span>
       <Highlight>→</Highlight>
     </Button>
     <HeroTitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
       Illumination accelerated.
-      <br className="hidden md:block" /> "Kuldeep's Product"
+      <br className="hidden md:block" /> "The Product Tag"
     </HeroTitle>
     <HeroSubtitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
       This is the demo tagline for the product
