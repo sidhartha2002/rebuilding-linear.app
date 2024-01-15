@@ -11,10 +11,9 @@ export const HomepageHero = () => (
       variant="secondary"
       size="small"
     >
-      <span>
-        Notable union helps clients find new sources of growth in ever-changing
-        world
-      </span>{" "}
+      <span className="">
+        Notable union helps clients find new sources of growth
+      </span>
       <Highlight>→</Highlight>
     </Button>
     <HeroTitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
